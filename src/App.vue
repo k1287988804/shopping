@@ -1,7 +1,7 @@
 <template>
   <div class="app-container">
       <mt-header fixed title="哈哈哈哈哈"></mt-header>
-      <p>123</p>
+      <p>123</p>  
       <nav class="mui-bar mui-bar-tab">
 			<a class="mui-tab-item mui-active" href="#tabbar">
 				<span class="mui-icon mui-icon-home"></span>
