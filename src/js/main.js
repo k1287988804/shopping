@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import app from './../App.vue'
-import {Header,Swipe, SwipeItem} from 'mint-ui'
-Vue.component(Swipe.name, Swipe);
-Vue.component(SwipeItem.name, SwipeItem);
+import {Header,Swipe, SwipeItem,Button} from 'mint-ui'
+Vue.component(Swipe.name, Swipe)
+Vue.component(SwipeItem.name, SwipeItem)
 Vue.component(Header.name,Header)
+Vue.component(Button.name,Button)
 import './../lib/css/mui.css'
 import './../lib/css/icons-extra.css'
 import VueRouter from 'vue-router'
@@ -19,5 +20,5 @@ var vm=new Vue({
     render:function(createElement){
         return createElement(app)
     },
-    router
+    router:router
 })
