@@ -1,10 +1,23 @@
 <template>
-  <div>MemberContainer</div>
+  <div>MemberContainer
+  </div>
 </template>
 
 <script>
-export default {};
+import { Toast } from 'mint-ui'
+
+
+
+export default {
+  methods:{
+    
+  },
+  mounted(){
+
+  }
+};
 </script>
 
 <style lang='less' scoped>
+
 </style>

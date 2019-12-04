@@ -43,7 +43,9 @@ module.exports = {
               ["component",{
                   "libraryName": "mint-ui",
                   "style": true
-              }]]}},
+              }]],
+              sourceType:"unambiguous"}
+            },
             exclude: /node_modules/},
             {test:/\.css$/,use:['style-loader','css-loader']}, //配置处理.css文件的第三方loader规则 
             {test:/\.less$/,use:['style-loader','css-loader','less-loader']},//配置.less文件的第三方loader

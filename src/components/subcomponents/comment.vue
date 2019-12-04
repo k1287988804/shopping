@@ -2,8 +2,8 @@
   <div class="cmt-container">
       <h3>发表评论</h3>
       <hr>
-      <textarea placeholder="最多吐槽120个字"></textarea>
-      <mt-button type="primary" size="large">发表评论</mt-button>
+      <textarea placeholder="最多吐槽120个字" ></textarea>
+      <mt-button type="primary" size="large" >发表评论</mt-button>
       <div class="cmt-list">
           <div class="cmt-item">
               <div class="cmt-title">
@@ -67,7 +67,9 @@ export default {
     },
     props:['id'],
     methods:{
-
+        postComments(){
+            
+        }
     },
 
 };
