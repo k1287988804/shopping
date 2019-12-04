@@ -1,7 +1,7 @@
 <template>
   <div>
     <mt-swipe :auto="4000">
-      <mt-swipe-item v-for="item in lunbotuList" :key="item.url">
+      <mt-swipe-item v-for="item in lunbotuList" :key="item.url" class="mt-swipe-item">
         <img :src="item.url">
       </mt-swipe-item>
     </mt-swipe>
@@ -13,9 +13,9 @@
 		                    <!-- <span class="mui-icon mui-icon-email"><span class="mui-badge">5</span></span> -->
                         <img src="./../../images/menu2.png" alt="">
 		                    <div class="mui-media-body">图片分享</div></router-link></li>
-		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><router-link to="/home/GoodsList">
 		                    <img src="./../../images/menu3.png" alt="">
-		                    <div class="mui-media-body">商品购买</div></a></li>
+		                    <div class="mui-media-body">商品购买</div></router-link></li>
 		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
 		                    <img src="./../../images/menu4.png" alt="">
 		                    <div class="mui-media-body">留言反馈</div></a></li>
@@ -53,6 +53,13 @@ export default {
 </script>
 
 <style lang='less' scoped>
+.mt-swipe-item{
+  text-align:center;
+  img{
+    width:100%;
+    height:100%;
+  }
+}
 .mint-swipe {
   height: 200px;
   img{

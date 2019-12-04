@@ -44,7 +44,7 @@ import mui from './../../lib/js/mui.min.js'
 export default {
     data(){
 		return {
-			imageList:[
+			 imageList:[
 				"http://fuss10.elemecdn.com/b/18/0678e57cb1b226c04888e7f244c20jpeg.jpeg",
 				"http://fuss10.elemecdn.com/3/1e/42634e29812e6594c98a89e922c60jpeg.jpeg",
 				"http://fuss10.elemecdn.com/1/c5/95c37272d3e554317dcec1e17a9f5jpeg.jpeg",
@@ -58,6 +58,9 @@ export default {
 		mui('.mui-scroll-wrapper').scroll({
 		deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
 		});
+	},
+	components:{
+
 	}
 };
 </script>

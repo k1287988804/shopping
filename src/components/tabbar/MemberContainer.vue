@@ -1,5 +1,6 @@
 <template>
   <div>MemberContainer
+    <div class='ceshi'></div>
   </div>
 </template>
 
@@ -19,5 +20,11 @@ export default {
 </script>
 
 <style lang='less' scoped>
-
+.ceshi{
+  width: 2.67rem;
+  height: 3.07rem;
+  margin-top: 0.97rem;
+  margin-left: 0.67rem;
+  background-color: red;
+}
 </style>

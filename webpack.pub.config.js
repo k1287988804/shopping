@@ -66,7 +66,7 @@ module.exports = {
         rules:[
             {test: /\.js|jsx$/, use:{loader:'babel-loader',
             options:{presets: ["@babel/preset-env","@babel/preset-react","mobx"],
-            plugins:["@babel/plugin-transform-runtime","@babel/plugin-proposal-class-properties",["@babel/plugin-transform-modules-commonjs", { "strictMode": false }],
+            plugins:["@babel/plugin-transform-runtime","@babel/plugin-proposal-class-properties",
               ["import", {
                 "libraryName": "antd",
                 "libraryDirectory": "es",
@@ -75,8 +75,8 @@ module.exports = {
               ["component",{
                 "libraryName": "mint-ui",
                 "style": true
-              }]]}
-            
+              }]],
+              sourceType:"unambiguous"}
             },
             exclude: /node_modules/},
             {test:/\.css$/,use:[{

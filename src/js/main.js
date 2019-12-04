@@ -1,5 +1,9 @@
 import Vue from 'vue'
 import app from './../App.vue'
+import RemConfig from './../js/remConfig.js'
+RemConfig(750,100)
+
+
 import {Header,Swipe, SwipeItem,Button,Lazyload} from 'mint-ui'
 Vue.component(Swipe.name, Swipe)
 Vue.component(SwipeItem.name, SwipeItem)
@@ -15,6 +19,11 @@ Vue.use(VueRouter)
 import router from './router.js'
 import VueResource from 'vue-resource'
 Vue.use(VueResource)
+import VuePreview from 'vue-preview'
+// defalut install
+Vue.use(VuePreview)
+
+
 
 
 
