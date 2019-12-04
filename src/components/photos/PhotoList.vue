@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="imageListContainer">
       <div id="slider" class="mui-slider">
 				<div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
 					<div class="mui-scroll">
@@ -26,8 +26,12 @@
 						</a>
 					</div>
 				</div>
-
 			</div>
+			<router-link :to="'/home/photoInfo/'+1" tag="ul">
+			<li v-for="item in imageList" :key="item">
+				<img v-lazy="item">
+			</li>
+			</router-link>
   </div>
 </template>
 
@@ -39,7 +43,16 @@ import mui from './../../lib/js/mui.min.js'
 
 export default {
     data(){
-		return {}
+		return {
+			imageList:[
+				"http://fuss10.elemecdn.com/b/18/0678e57cb1b226c04888e7f244c20jpeg.jpeg",
+				"http://fuss10.elemecdn.com/3/1e/42634e29812e6594c98a89e922c60jpeg.jpeg",
+				"http://fuss10.elemecdn.com/1/c5/95c37272d3e554317dcec1e17a9f5jpeg.jpeg",
+				"http://fuss10.elemecdn.com/7/85/e478e4b26af74f4539c79f31fde80jpeg.jpeg",
+				"http://fuss10.elemecdn.com/b/df/b630636b444346e38cef6c59f6457jpeg.jpeg",
+				"http://fuss10.elemecdn.com/7/a5/596ab03934612236f807b92906fd8jpeg.jpeg"
+			]
+		}
 	},
 	mounted(){
 		mui('.mui-scroll-wrapper').scroll({
@@ -50,4 +63,30 @@ export default {
 </script>
 
 <style lang='less' scoped>
+.imageListContainer{
+	ul{
+		padding: 0;
+		li{
+			list-style: none;
+			position: relative;
+			.info{
+				color:white;
+				.info-title{
+					font-size:14px;
+				}
+				.info-body{
+					font-size:13px;
+				}
+			}
+		}
+	}
+	img{
+		width:100%;
+	}
+	img[lazy=loading] {
+	width: 40px;
+	height: 300px;
+	margin: auto;
+	}
+}
 </style>

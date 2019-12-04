@@ -1,10 +1,11 @@
 import Vue from 'vue'
 import app from './../App.vue'
-import {Header,Swipe, SwipeItem,Button} from 'mint-ui'
+import {Header,Swipe, SwipeItem,Button,Lazyload} from 'mint-ui'
 Vue.component(Swipe.name, Swipe)
 Vue.component(SwipeItem.name, SwipeItem)
 Vue.component(Header.name,Header)
 Vue.component(Button.name,Button)
+Vue.use(Lazyload)
 
 import './../lib/css/mui.css'
 import './../lib/css/icons-extra.css'

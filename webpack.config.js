@@ -42,7 +42,7 @@ module.exports = {
               }],
               ["component",{
                   "libraryName": "mint-ui",
-                  "style": true
+                  "style": true 
               }]],
               sourceType:"unambiguous"}
             },
