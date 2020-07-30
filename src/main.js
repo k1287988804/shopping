@@ -1,6 +1,8 @@
 import Vue from 'vue'
-import app from './../App.vue'
-import RemConfig from './../js/remConfig.js'
+import app from './App.vue'
+import RemConfig from './js/remConfig.js'
+import Fetch from  './utils/fetch.js'
+Vue.prototype.$fetch = Fetch;
 RemConfig(750,100)
 
 
@@ -11,12 +13,13 @@ Vue.component(Header.name,Header)
 Vue.component(Button.name,Button)
 Vue.use(Lazyload)
 
-import './../lib/css/mui.css'
-import './../lib/css/icons-extra.css'
-import './../css/normalize.css'
+import './lib/css/mui.css'
+import './lib/css/icons-extra.css'
+import './css/normalize.css'
+
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
-import router from './router.js'
+import router from './common/router.js'
 import VueResource from 'vue-resource'
 Vue.use(VueResource)
 import VuePreview from 'vue-preview'
